@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A9187BA1C9F605D006CBB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187B91C9F605D006CBB06 /* AppDelegate.swift */; };
+		9A9187BC1C9F605D006CBB06 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187BB1C9F605D006CBB06 /* MasterViewController.swift */; };
+		9A9187BE1C9F605D006CBB06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187BD1C9F605D006CBB06 /* DetailViewController.swift */; };
+		9A9187C11C9F605D006CBB06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9187BF1C9F605D006CBB06 /* Main.storyboard */; };
+		9A9187C31C9F605D006CBB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9187C21C9F605D006CBB06 /* Assets.xcassets */; };
+		9A9187C61C9F605D006CBB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */; };
+		9A9187D11C9F605D006CBB06 /* MyMedicalContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187D01C9F605D006CBB06 /* MyMedicalContactsTests.swift */; };
+		9A9187DC1C9F605D006CBB06 /* MyMedicalContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187DB1C9F605D006CBB06 /* MyMedicalContactsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A9187CD1C9F605D006CBB06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9187AE1C9F605D006CBB06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9187B51C9F605D006CBB06;
+			remoteInfo = MyMedicalContacts;
+		};
+		9A9187D81C9F605D006CBB06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9187AE1C9F605D006CBB06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9187B51C9F605D006CBB06;
+			remoteInfo = MyMedicalContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A9187B61C9F605D006CBB06 /* MyMedicalContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMedicalContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9187B91C9F605D006CBB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A9187BB1C9F605D006CBB06 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9A9187BD1C9F605D006CBB06 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A9187C01C9F605D006CBB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A9187C21C9F605D006CBB06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9187C51C9F605D006CBB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A9187C71C9F605D006CBB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A9187CC1C9F605D006CBB06 /* MyMedicalContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMedicalContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9187D01C9F605D006CBB06 /* MyMedicalContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicalContactsTests.swift; sourceTree = "<group>"; };
+		9A9187D21C9F605D006CBB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A9187D71C9F605D006CBB06 /* MyMedicalContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMedicalContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9187DB1C9F605D006CBB06 /* MyMedicalContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicalContactsUITests.swift; sourceTree = "<group>"; };
+		9A9187DD1C9F605D006CBB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A9187B31C9F605D006CBB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187C91C9F605D006CBB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187D41C9F605D006CBB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A9187AD1C9F605D006CBB06 = {
+			isa = PBXGroup;
+			children = (
+				9A9187B81C9F605D006CBB06 /* MyMedicalContacts */,
+				9A9187CF1C9F605D006CBB06 /* MyMedicalContactsTests */,
+				9A9187DA1C9F605D006CBB06 /* MyMedicalContactsUITests */,
+				9A9187B71C9F605D006CBB06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A9187B71C9F605D006CBB06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9187B61C9F605D006CBB06 /* MyMedicalContacts.app */,
+				9A9187CC1C9F605D006CBB06 /* MyMedicalContactsTests.xctest */,
+				9A9187D71C9F605D006CBB06 /* MyMedicalContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9187B81C9F605D006CBB06 /* MyMedicalContacts */ = {
+			isa = PBXGroup;
+			children = (
+				9A9187B91C9F605D006CBB06 /* AppDelegate.swift */,
+				9A9187BB1C9F605D006CBB06 /* MasterViewController.swift */,
+				9A9187BD1C9F605D006CBB06 /* DetailViewController.swift */,
+				9A9187BF1C9F605D006CBB06 /* Main.storyboard */,
+				9A9187C21C9F605D006CBB06 /* Assets.xcassets */,
+				9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */,
+				9A9187C71C9F605D006CBB06 /* Info.plist */,
+			);
+			path = MyMedicalContacts;
+			sourceTree = "<group>";
+		};
+		9A9187CF1C9F605D006CBB06 /* MyMedicalContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9187D01C9F605D006CBB06 /* MyMedicalContactsTests.swift */,
+				9A9187D21C9F605D006CBB06 /* Info.plist */,
+			);
+			path = MyMedicalContactsTests;
+			sourceTree = "<group>";
+		};
+		9A9187DA1C9F605D006CBB06 /* MyMedicalContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9187DB1C9F605D006CBB06 /* MyMedicalContactsUITests.swift */,
+				9A9187DD1C9F605D006CBB06 /* Info.plist */,
+			);
+			path = MyMedicalContactsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A9187B51C9F605D006CBB06 /* MyMedicalContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9187E01C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContacts" */;
+			buildPhases = (
+				9A9187B21C9F605D006CBB06 /* Sources */,
+				9A9187B31C9F605D006CBB06 /* Frameworks */,
+				9A9187B41C9F605D006CBB06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMedicalContacts;
+			productName = MyMedicalContacts;
+			productReference = 9A9187B61C9F605D006CBB06 /* MyMedicalContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A9187CB1C9F605D006CBB06 /* MyMedicalContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9187E31C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsTests" */;
+			buildPhases = (
+				9A9187C81C9F605D006CBB06 /* Sources */,
+				9A9187C91C9F605D006CBB06 /* Frameworks */,
+				9A9187CA1C9F605D006CBB06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9187CE1C9F605D006CBB06 /* PBXTargetDependency */,
+			);
+			name = MyMedicalContactsTests;
+			productName = MyMedicalContactsTests;
+			productReference = 9A9187CC1C9F605D006CBB06 /* MyMedicalContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A9187D61C9F605D006CBB06 /* MyMedicalContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9187E61C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsUITests" */;
+			buildPhases = (
+				9A9187D31C9F605D006CBB06 /* Sources */,
+				9A9187D41C9F605D006CBB06 /* Frameworks */,
+				9A9187D51C9F605D006CBB06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9187D91C9F605D006CBB06 /* PBXTargetDependency */,
+			);
+			name = MyMedicalContactsUITests;
+			productName = MyMedicalContactsUITests;
+			productReference = 9A9187D71C9F605D006CBB06 /* MyMedicalContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A9187AE1C9F605D006CBB06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Denise Bradley";
+				TargetAttributes = {
+					9A9187B51C9F605D006CBB06 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					9A9187CB1C9F605D006CBB06 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9A9187B51C9F605D006CBB06;
+					};
+					9A9187D61C9F605D006CBB06 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9A9187B51C9F605D006CBB06;
+					};
+				};
+			};
+			buildConfigurationList = 9A9187B11C9F605D006CBB06 /* Build configuration list for PBXProject "MyMedicalContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A9187AD1C9F605D006CBB06;
+			productRefGroup = 9A9187B71C9F605D006CBB06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9187B51C9F605D006CBB06 /* MyMedicalContacts */,
+				9A9187CB1C9F605D006CBB06 /* MyMedicalContactsTests */,
+				9A9187D61C9F605D006CBB06 /* MyMedicalContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A9187B41C9F605D006CBB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9187C61C9F605D006CBB06 /* LaunchScreen.storyboard in Resources */,
+				9A9187C31C9F605D006CBB06 /* Assets.xcassets in Resources */,
+				9A9187C11C9F605D006CBB06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187CA1C9F605D006CBB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187D51C9F605D006CBB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A9187B21C9F605D006CBB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9187BE1C9F605D006CBB06 /* DetailViewController.swift in Sources */,
+				9A9187BC1C9F605D006CBB06 /* MasterViewController.swift in Sources */,
+				9A9187BA1C9F605D006CBB06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187C81C9F605D006CBB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9187D11C9F605D006CBB06 /* MyMedicalContactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9187D31C9F605D006CBB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9187DC1C9F605D006CBB06 /* MyMedicalContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A9187CE1C9F605D006CBB06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9187B51C9F605D006CBB06 /* MyMedicalContacts */;
+			targetProxy = 9A9187CD1C9F605D006CBB06 /* PBXContainerItemProxy */;
+		};
+		9A9187D91C9F605D006CBB06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9187B51C9F605D006CBB06 /* MyMedicalContacts */;
+			targetProxy = 9A9187D81C9F605D006CBB06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A9187BF1C9F605D006CBB06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9187C01C9F605D006CBB06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9187C51C9F605D006CBB06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A9187DE1C9F605D006CBB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A9187DF1C9F605D006CBB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A9187E11C9F605D006CBB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyMedicalContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A9187E21C9F605D006CBB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyMedicalContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A9187E41C9F605D006CBB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyMedicalContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMedicalContacts.app/MyMedicalContacts";
+			};
+			name = Debug;
+		};
+		9A9187E51C9F605D006CBB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyMedicalContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyMedicalContacts.app/MyMedicalContacts";
+			};
+			name = Release;
+		};
+		9A9187E71C9F605D006CBB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyMedicalContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyMedicalContacts;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9A9187E81C9F605D006CBB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyMedicalContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bradley.MyMedicalContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyMedicalContacts;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A9187B11C9F605D006CBB06 /* Build configuration list for PBXProject "MyMedicalContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9187DE1C9F605D006CBB06 /* Debug */,
+				9A9187DF1C9F605D006CBB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9187E01C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9187E11C9F605D006CBB06 /* Debug */,
+				9A9187E21C9F605D006CBB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A9187E31C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9187E41C9F605D006CBB06 /* Debug */,
+				9A9187E51C9F605D006CBB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A9187E61C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9187E71C9F605D006CBB06 /* Debug */,
+				9A9187E81C9F605D006CBB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9187AE1C9F605D006CBB06 /* Project object */;
+}
