@@ -15,6 +15,7 @@
 		9A9187C61C9F605D006CBB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */; };
 		9A9187D11C9F605D006CBB06 /* MyMedicalContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187D01C9F605D006CBB06 /* MyMedicalContactsTests.swift */; };
 		9A9187DC1C9F605D006CBB06 /* MyMedicalContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187DB1C9F605D006CBB06 /* MyMedicalContactsUITests.swift */; };
+		9AE9C2B01CA4928000CFAAA4 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE9C2AF1CA4928000CFAAA4 /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9A9187D71C9F605D006CBB06 /* MyMedicalContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMedicalContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9187DB1C9F605D006CBB06 /* MyMedicalContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicalContactsUITests.swift; sourceTree = "<group>"; };
 		9A9187DD1C9F605D006CBB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE9C2AF1CA4928000CFAAA4 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9A9187C21C9F605D006CBB06 /* Assets.xcassets */,
 				9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */,
 				9A9187C71C9F605D006CBB06 /* Info.plist */,
+				9AE9C2AF1CA4928000CFAAA4 /* AddContactViewController.swift */,
 			);
 			path = MyMedicalContacts;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9187BE1C9F605D006CBB06 /* DetailViewController.swift in Sources */,
+				9AE9C2B01CA4928000CFAAA4 /* AddContactViewController.swift in Sources */,
 				9A9187BC1C9F605D006CBB06 /* MasterViewController.swift in Sources */,
 				9A9187BA1C9F605D006CBB06 /* AppDelegate.swift in Sources */,
 			);
@@ -486,6 +490,7 @@
 				9A9187E21C9F605D006CBB06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A9187E31C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				9A9187E51C9F605D006CBB06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A9187E61C9F605D006CBB06 /* Build configuration list for PBXNativeTarget "MyMedicalContactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				9A9187E81C9F605D006CBB06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
