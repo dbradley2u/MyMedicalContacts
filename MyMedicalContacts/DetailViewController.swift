@@ -15,6 +15,9 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var state: UILabel!
+    @IBOutlet weak var zip: UILabel!
     @IBOutlet weak var email: UILabel!
     
     
@@ -51,6 +54,11 @@ class DetailViewController: UIViewController {
                         } else {
                             self.address.text = "No Address"
                         }
+                        
+                        //FIXME:  Need to pull in city, state, and zip.
+                        /*let postalCity = contact.postalAddresses.first?.value as? CNPostalAddress
+                        self.city.text = CNPostalAddressFormatter().stringFromPostalAddress(postalCity as CNPostalAddressCityKey)*/
+                        
                     }
                 })
             } catch {

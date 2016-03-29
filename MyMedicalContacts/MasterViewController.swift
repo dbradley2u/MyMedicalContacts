@@ -123,6 +123,9 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
         cell.textLabel?.text = formatter.stringFromContact(contact)
         cell.detailTextLabel?.text = contact.emailAddresses.first?.value as? String
         
+        //FIXME: Need to be able to diplay phone number instead of email address 
+        //cell.detailTextLabel?.text = contact.phoneNumbers.first?.value as? String
+        
         return cell
     }
     

@@ -11,6 +11,16 @@ import Contacts
 
 class AddContactViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var addImage: UIButton!
+    
+    @IBOutlet weak var contactImage: UIImageView!
+    
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var mobileNumber: UITextField!
+    @IBOutlet weak var homeEmail: UITextField!
+    
+    
     var contact: CNContact {
         get {
             let store = CNContactStore()
@@ -42,17 +52,6 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
             return contactToAdd
         }
     }
-    
-    @IBOutlet weak var addImage: UIButton!
-    
-    @IBOutlet weak var contactImage: UIImageView!
-    
-    @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var lastName: UITextField!
-    @IBOutlet weak var mobileNumber: UITextField!
-    @IBOutlet weak var homeEmail: UITextField!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
