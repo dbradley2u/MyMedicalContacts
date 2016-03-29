@@ -40,6 +40,10 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
                 contactToAdd.imageData = UIImagePNGRepresentation(image)
             }
             
+            //Add to group
+            let groupNameKey = "Medical"
+            let groupToAdd = CNGroup()
+            
             let saveRequest = CNSaveRequest()
             saveRequest.addContact(contactToAdd, toContainerWithIdentifier: nil)
             

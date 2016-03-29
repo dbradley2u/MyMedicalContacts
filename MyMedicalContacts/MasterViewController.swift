@@ -45,12 +45,48 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
         
     }
     
+    
+    static var groupName = "Medical"
+    
+    /// Fetches contacts from the group in the Contacts application.
+    ///
+    /// - returns: array of contacts
+    static func getContactsFromGroup() -> [CNContact]{
+        var groupContacts = [CNContact]()
+        let contactStore = CNContactStore()
+        
+        do {
+            var predicate : NSPredicate!
+            let allGroups = try contactStore.groupsMatchingPredicate(nil)
+            for group in allGroups {
+                if (group.name == groupName) {
+                    predicate = CNContact.predicateForContactsInGroupWithIdentifier(group.identifier)
+                }
+            }
+            let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactOrganizationNameKey, CNContactPhoneNumbersKey, CNContactUrlAddressesKey, CNContactEmailAddressesKey, CNContactPostalAddressesKey, CNContactNoteKey, CNContactImageDataKey]
+            
+            if predicate != nil {
+                let contacts = try contactStore.unifiedContactsMatchingPredicate(predicate, keysToFetch: keysToFetch)
+                
+                for contact in contacts {
+                    groupContacts.append(contact)
+                }
+            }
+            
+        } catch _ {
+            print("Finding contacts in \(groupName) group failed.")
+        }
+        
+        return groupContacts
+    }
+    
+    
     func retrieveContactsWithStore(store: CNContactStore) {
         do {
             let groups = try store.groupsMatchingPredicate(nil)
             let predicate = CNContact.predicateForContactsInGroupWithIdentifier(groups[0].identifier)
             //let predicate = CNContact.predicateForContactsMatchingName("John")
-            let keysToFetch = [CNContactFormatter.descriptorForRequiredKeysForStyle(.FullName), CNContactEmailAddressesKey]
+            let keysToFetch = [CNContactFormatter.descriptorForRequiredKeysForStyle(.FullName), CNContactEmailAddressesKey, CNContactPhoneNumbersKey]
             
             let contacts = try store.unifiedContactsMatchingPredicate(predicate, keysToFetch: keysToFetch)
             self.objects = contacts
@@ -70,6 +106,47 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
     
     func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
         NSNotificationCenter.defaultCenter().postNotificationName("addNewContact", object: nil, userInfo: ["contactToAdd": contact])
+    }
+    
+    //If user is selected, add to group
+    func addContactToGroup(contact: CNContactStore) {
+        // 1
+        let groupNameKey = "Medical"
+        let groupToAdd = CNGroup()
+        
+        // 2
+        
+        // 3
+        let addedToGroup = CNErrorCode(rawValue: 0)
+        if (addedToGroup == nil) {
+            print("Couldn't add contact to group.")
+        }
+        updateContactChanges()
+    }
+    
+    func updateContactChanges() {
+        // Get mutable copy of contact
+        /*var mutable = contactPicker(picker: CNContactPickerViewController, didSelectContact: <#T##CNContact#>) contact.MutableCopy() as CNMutableContact;
+        var newEmail = CNLabeledValue(label: CNLabelHome, value:  NSString(string: "john.appleseed@xamarin.com"));
+        
+        // Append new email
+        var emails = NSObject[mutable.EmailAddresses.Length+1];
+        mutable.EmailAddresses.CopyTo(emails,0);
+        emails[mutable.EmailAddresses.Length+1] = newEmail;
+        mutable.EmailAddresses = emails;
+        
+        // Update contact
+        var store = CNContactStore();
+        var saveRequest = CNSaveRequest();
+        saveRequest.UpdateContact(mutable);
+        
+        NSError error;
+        
+        if (store.executeSaveRequest(saveRequest)){
+            Console.WriteLine("Contact updated.");
+        } else {
+            Console.WriteLine("Update error: {0}", error);
+        }*/
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -121,10 +198,13 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
         let formatter = CNContactFormatter()
         
         cell.textLabel?.text = formatter.stringFromContact(contact)
-        cell.detailTextLabel?.text = contact.emailAddresses.first?.value as? String
-        
-        //FIXME: Need to be able to diplay phone number instead of email address 
-        //cell.detailTextLabel?.text = contact.phoneNumbers.first?.value as? String
+        cell.detailTextLabel?.text = ""
+        for phoneNo in contact.phoneNumbers {
+            if phoneNo.label == CNLabelPhoneNumberMobile {
+                cell.detailTextLabel?.text = (phoneNo.value as! CNPhoneNumber).stringValue
+                break
+            }
+        }
         
         return cell
     }
