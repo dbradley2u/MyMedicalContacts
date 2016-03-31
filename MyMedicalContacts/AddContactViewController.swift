@@ -17,6 +17,10 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var streetString: UITextField!
+    @IBOutlet weak var cityString: UITextField!
+    @IBOutlet weak var stateString: UITextField!
+    @IBOutlet weak var postalCodeString: UITextField!
     @IBOutlet weak var mobileNumber: UITextField!
     @IBOutlet weak var homeEmail: UITextField!
     
@@ -41,8 +45,8 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
             }
             
             //Add to group
-            let groupNameKey = "Medical"
-            let groupToAdd = CNGroup()
+            //let groupNameKey = "Medical"
+            //let groupToAdd = CNGroup()
             
             let saveRequest = CNSaveRequest()
             saveRequest.addContact(contactToAdd, toContainerWithIdentifier: nil)
@@ -89,7 +93,7 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
             self.contactImage.alpha = 1.0
             self.addImage.alpha = 0.0
         }
-    }
+    } 
     
     /*
     // MARK: - Navigation

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7C4D231CABB71200CF7BC8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C4D221CABB71200CF7BC8 /* MapViewController.swift */; };
+		9A7C4D251CABBA5300CF7BC8 /* MyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C4D241CABBA5300CF7BC8 /* MyPin.swift */; };
 		9A9187BA1C9F605D006CBB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187B91C9F605D006CBB06 /* AppDelegate.swift */; };
 		9A9187BC1C9F605D006CBB06 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187BB1C9F605D006CBB06 /* MasterViewController.swift */; };
 		9A9187BE1C9F605D006CBB06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9187BD1C9F605D006CBB06 /* DetailViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A7C4D221CABB71200CF7BC8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A7C4D241CABBA5300CF7BC8 /* MyPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPin.swift; sourceTree = "<group>"; };
 		9A9187B61C9F605D006CBB06 /* MyMedicalContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMedicalContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9187B91C9F605D006CBB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9187BB1C9F605D006CBB06 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				9A9187C41C9F605D006CBB06 /* LaunchScreen.storyboard */,
 				9A9187C71C9F605D006CBB06 /* Info.plist */,
 				9AE9C2AF1CA4928000CFAAA4 /* AddContactViewController.swift */,
+				9A7C4D221CABB71200CF7BC8 /* MapViewController.swift */,
+				9A7C4D241CABBA5300CF7BC8 /* MyPin.swift */,
 			);
 			path = MyMedicalContacts;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 				9A9187BE1C9F605D006CBB06 /* DetailViewController.swift in Sources */,
 				9AE9C2B01CA4928000CFAAA4 /* AddContactViewController.swift in Sources */,
 				9A9187BC1C9F605D006CBB06 /* MasterViewController.swift in Sources */,
+				9A7C4D231CABB71200CF7BC8 /* MapViewController.swift in Sources */,
 				9A9187BA1C9F605D006CBB06 /* AppDelegate.swift in Sources */,
+				9A7C4D251CABBA5300CF7BC8 /* MyPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
